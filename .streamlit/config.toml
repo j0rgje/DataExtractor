@@ -1,0 +1,19 @@
+[theme]
+primaryColor = "#1fb6ff"           # cyan-blue accent
+backgroundColor = "#0b2c3d"         # dark teal
+secondaryBackgroundColor = "#133349" # panel background
+textColor = "#e6f1fa"               # off-white
+font = "sans serif"
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+showErrorDetails = true
+
+[logger]
+level = "info"

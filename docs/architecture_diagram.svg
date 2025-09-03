@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="600px" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .frontend-box { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; }
+      .azure-box { fill: #0078d4; stroke: #004c87; stroke-width: 2; color: white; }
+      .mock-box { fill: #f3f4f6; stroke: #6b7280; stroke-width: 2; }
+      .process-box { fill: #fef3c7; stroke: #f59e0b; stroke-width: 2; }
+      .main-app { fill: #3b82f6; stroke: #1e3a8a; stroke-width: 2; color: white; }
+      .text-white { fill: white; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+      .text-dark { fill: #1f2937; font-family: Arial, sans-serif; font-size: 11px; }
+      .text-small { fill: #374151; font-family: Arial, sans-serif; font-size: 10px; }
+      .arrow { stroke: #6b7280; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-dashed { stroke: #9ca3af; stroke-width: 2; fill: none; stroke-dasharray: 5,5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9fafb" />
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="text-dark" font-size="18" font-weight="bold">HSO Data Extractor - Architectuur Diagram</text>
+  
+  <!-- Frontend Section -->
+  <g>
+    <rect x="50" y="60" width="200" height="150" class="frontend-box" rx="8" />
+    <text x="150" y="80" text-anchor="middle" class="text-dark" font-weight="bold">Frontend</text>
+    
+    <!-- Streamlit App -->
+    <rect x="70" y="100" width="160" height="30" class="main-app" rx="4" />
+    <text x="150" y="120" text-anchor="middle" class="text-white">Streamlit App</text>
+    
+    <!-- Professional UI -->
+    <rect x="70" y="140" width="160" height="25" class="frontend-box" rx="4" />
+    <text x="150" y="157" text-anchor="middle" class="text-small">Professional UI / HSO Branding</text>
+    
+    <!-- Components -->
+    <rect x="70" y="175" width="160" height="25" class="frontend-box" rx="4" />
+    <text x="150" y="192" text-anchor="middle" class="text-small">Upload/Process/Check Components</text>
+  </g>
+  
+  <!-- Mock Services Section -->
+  <g>
+    <rect x="300" y="60" width="180" height="100" class="mock-box" rx="8" />
+    <text x="390" y="80" text-anchor="middle" class="text-dark" font-weight="bold">Mock Services (Demo)</text>
+    
+    <rect x="320" y="100" width="140" height="25" class="mock-box" rx="4" />
+    <text x="390" y="117" text-anchor="middle" class="text-small">Mock Azure Client</text>
+    
+    <rect x="320" y="135" width="140" height="25" class="mock-box" rx="4" />
+    <text x="390" y="152" text-anchor="middle" class="text-small">Demo Services</text>
+  </g>
+  
+  <!-- Azure Backend Section -->
+  <g>
+    <rect x="520" y="60" width="220" height="200" class="azure-box" rx="8" />
+    <text x="630" y="80" text-anchor="middle" class="text-white" font-weight="bold">Azure Backend (Production)</text>
+    
+    <!-- Azure Functions -->
+    <rect x="540" y="100" width="80" height="30" class="azure-box" rx="4" />
+    <text x="580" y="120" text-anchor="middle" class="text-white" font-size="10">Azure Functions</text>
+    
+    <!-- Blob Storage -->
+    <rect x="540" y="140" width="80" height="30" class="azure-box" rx="4" />
+    <text x="580" y="160" text-anchor="middle" class="text-white" font-size="10">Blob Storage</text>
+    
+    <!-- Computer Vision -->
+    <rect x="640" y="100" width="80" height="30" class="azure-box" rx="4" />
+    <text x="680" y="120" text-anchor="middle" class="text-white" font-size="10">Computer Vision</text>
+    
+    <!-- Key Vault -->
+    <rect x="640" y="140" width="80" height="30" class="azure-box" rx="4" />
+    <text x="680" y="160" text-anchor="middle" class="text-white" font-size="10">Key Vault</text>
+  </g>
+  
+  <!-- Document Processing Flow -->
+  <g>
+    <rect x="50" y="300" width="600" height="180" class="process-box" rx="8" />
+    <text x="350" y="320" text-anchor="middle" class="text-dark" font-weight="bold">Document Processing Flow</text>
+    
+    <!-- Process Steps -->
+    <rect x="80" y="340" width="100" height="40" class="process-box" rx="4" />
+    <text x="130" y="365" text-anchor="middle" class="text-dark" font-weight="bold">1. Upload PDF</text>
+    
+    <rect x="200" y="340" width="100" height="40" class="process-box" rx="4" />
+    <text x="250" y="365" text-anchor="middle" class="text-dark" font-weight="bold">2. Convert to Text</text>
+    
+    <rect x="320" y="340" width="100" height="40" class="process-box" rx="4" />
+    <text x="370" y="365" text-anchor="middle" class="text-dark" font-weight="bold">3. Extract Data</text>
+    
+    <rect x="440" y="340" width="100" height="40" class="process-box" rx="4" />
+    <text x="490" y="365" text-anchor="middle" class="text-dark" font-weight="bold">4. Human Check</text>
+    
+    <rect x="560" y="340" width="100" height="40" class="process-box" rx="4" />
+    <text x="610" y="365" text-anchor="middle" class="text-dark" font-weight="bold">5. Save Results</text>
+    
+    <!-- Process Flow Arrows -->
+    <line x1="180" y1="360" x2="200" y2="360" class="arrow" />
+    <line x1="300" y1="360" x2="320" y2="360" class="arrow" />
+    <line x1="420" y1="360" x2="440" y2="360" class="arrow" />
+    <line x1="540" y1="360" x2="560" y2="360" class="arrow" />
+    
+    <!-- Features -->
+    <text x="130" y="400" text-anchor="middle" class="text-small">• Drag & Drop</text>
+    <text x="130" y="415" text-anchor="middle" class="text-small">• PDF Validation</text>
+    <text x="130" y="430" text-anchor="middle" class="text-small">• Size Check</text>
+    
+    <text x="250" y="400" text-anchor="middle" class="text-small">• Azure Computer Vision</text>
+    <text x="250" y="415" text-anchor="middle" class="text-small">• PyPDF2 Fallback</text>
+    <text x="250" y="430" text-anchor="middle" class="text-small">• OCR Processing</text>
+    
+    <text x="370" y="400" text-anchor="middle" class="text-small">• AI-Powered Parsing</text>
+    <text x="370" y="415" text-anchor="middle" class="text-small">• Structured Data</text>
+    <text x="370" y="430" text-anchor="middle" class="text-small">• Financial Totals</text>
+    
+    <text x="490" y="400" text-anchor="middle" class="text-small">• Side-by-Side View</text>
+    <text x="490" y="415" text-anchor="middle" class="text-small">• Editable Fields</text>
+    <text x="490" y="430" text-anchor="middle" class="text-small">• Approve/Reject</text>
+    
+    <text x="610" y="400" text-anchor="middle" class="text-small">• Azure Blob Storage</text>
+    <text x="610" y="415" text-anchor="middle" class="text-small">• JSON Format</text>
+    <text x="610" y="430" text-anchor="middle" class="text-small">• Audit Trail</text>
+  </g>
+  
+  <!-- Connection Arrows -->
+  <!-- Frontend to Demo Mode -->
+  <line x1="250" y1="130" x2="300" y2="110" class="arrow-dashed" />
+  <text x="275" y="115" text-anchor="middle" class="text-small">Demo Mode</text>
+  
+  <!-- Frontend to Production -->
+  <line x1="250" y1="140" x2="520" y2="140" class="arrow" />
+  <text x="385" y="130" text-anchor="middle" class="text-small">Production</text>
+  
+  <!-- Frontend to Process Flow -->
+  <line x1="150" y1="210" x2="150" y2="300" class="arrow" />
+  
+  <!-- HSO Branding -->
+  <g>
+    <rect x="50" y="520" width="700" height="60" fill="#1e3a8a" rx="8" />
+    <text x="400" y="545" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🏢 HSO Data Extractor</text>
+    <text x="400" y="565" text-anchor="middle" fill="white" font-size="12">Powered by Microsoft Azure & Streamlit - Professional Document Processing Solution</text>
+  </g>
+</svg>

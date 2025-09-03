@@ -1,0 +1,16 @@
+# Local env files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Streamlit cache
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# VS Code
+.vscode/
